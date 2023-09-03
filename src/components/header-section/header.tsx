@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <div className={styles.header}>
       <Container>
-        <div className={styles.container}>
+        <div className={styles.body}>
           <div className={styles.logo}>
             <StaticImage src="../../assets/icons/logo.svg" alt="logo" />
           </div>
@@ -52,7 +52,11 @@ export const Header = () => {
                 placeholder="Search Art Work / Creator"
               />
             </form>
-            <Button variant="primary" text="Connect Wallet" />
+            <Button
+              fontFamily="Inter"
+              variant="primary"
+              text="Connect Wallet"
+            />
           </div>
         </div>
       </Container>

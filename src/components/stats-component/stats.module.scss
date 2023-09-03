@@ -1,0 +1,27 @@
+@use "styles/variables.module";
+@use "styles/utils";
+
+.statsContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 65px;
+}
+.statsBlock {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.statNumber {
+  color: #141416;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 37px;
+  font-weight: 600;
+}
+.statLabel {
+  color: #848586;
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18.386px;
+}

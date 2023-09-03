@@ -2,13 +2,55 @@
 @use "styles/utils";
 
 .discover {
-  width: 100%;
   background-color: variables.$background-white;
-  padding: 40px 95px;
+  padding: 40px 0px;
 }
 
 .line {
   width: 200px;
   height: 1px;
   background-color: #848586;
+}
+.body {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  column-gap: 110px;
+}
+.info {
+}
+
+.title {
+  max-width: 570px;
+  color: #141416;
+  font-family: "Poppins";
+  font-size: 75px;
+  font-weight: 600;
+  line-height: 90px;
+  text-transform: capitalize;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.subTitle {
+  color: #676767;
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 28px;
+  span {
+    color: #141416;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.buttons {
+  display: flex;
+  column-gap: 25px;
+  &:not(:last-child) {
+    margin-bottom: 80px;
+  }
 }
