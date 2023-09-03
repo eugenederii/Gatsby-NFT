@@ -1,0 +1,22 @@
+@use "styles/variables.module";
+@use "styles/utils";
+
+body {
+  font-family: "Poppins";
+}
+
+.container {
+  width: 100%;
+  max-width: 968px;
+  margin: 0 auto;
+  // background-color: variables.$primary-color;
+  padding: 0 24px;
+}
+
+.sectionHeader {
+  margin-top: 300px;
+}
+
+.root {
+  min-height: 100vh;
+}

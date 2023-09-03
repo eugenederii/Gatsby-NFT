@@ -1,0 +1,94 @@
+@use "styles/variables.module";
+@use "styles/utils";
+
+.header {
+  background-color: variables.$background-white;
+  padding: 40px 95px;
+  width: 100%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  max-width: 100%;
+  // margin-right: 60px;
+}
+.menu {
+  // margin-right: 130px;
+}
+.body {
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 10px;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 5px;
+  flex-wrap: wrap;
+}
+
+.link {
+  position: relative;
+  display: block;
+  font-family: "Inter";
+  color: variables.$header-color;
+  font-size: utils.spacing(2.5);
+  font-weight: 500;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: variables.$header-color;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.4s ease 0s;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.form {
+  background-color: #ededed;
+  border-radius: 10px;
+  position: relative;
+}
+.formButton {
+  position: absolute;
+  top: 0;
+  left: 22px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.input {
+  background-color: transparent;
+  height: 40px;
+  font-size: 16px;
+  color: variables.$header-color;
+  padding: 0px 20px 0px 80px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  &:disabled {
+    border: none;
+  }
+  &:focus {
+    border: none;
+  }
+  &::placeholder {
+    color: #c2c3cb;
+  }
+}

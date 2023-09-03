@@ -1,0 +1,14 @@
+@use "styles/variables.module";
+@use "styles/utils";
+
+.discover {
+  width: 100%;
+  background-color: variables.$background-white;
+  padding: 40px 95px;
+}
+
+.line {
+  width: 200px;
+  height: 1px;
+  background-color: #848586;
+}
